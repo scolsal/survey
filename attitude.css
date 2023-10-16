@@ -1,0 +1,188 @@
+body {
+	background-color: #CCC5C4;
+	color: #7F7B7B;
+	font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+	font-size: 10pt;
+}
+
+table {
+	font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+	font-size: 10pt;
+}
+
+div.formExt {
+	background-color: #F9F2EE;
+	width: 600px;
+    height: 100%;
+	margin-bottom: 5px;
+	padding: 1px;
+}
+
+div.formRow {
+	background-color: #F9F2EE;
+	width: 600px;
+    height: 100%;
+	margin-bottom: -35px;
+}
+
+.formField {
+    float: left;
+    vertical-align: top;
+	background-color: #F9F2EE;
+	width: 600px;
+}
+
+.page {
+	text-align: right;
+	font-size: 14pt;
+	color: #7F7B7B;
+}
+
+.pageb {
+	
+	font-size: 14pt;
+	color: #7F7B7B;
+}
+
+.formHeading {
+    font-size: 18pt;
+	color: #7F7B7B;
+	margin-bottom: 5px;
+}
+
+#formPage1 {
+    padding-left: 20px;
+}
+
+.formSection {
+    clear: both;
+    padding: 5px 0;
+}
+
+.question {
+    font-weight: 700;
+}
+
+.hiddenLabel {
+    display: none;
+}
+
+.formLabel {
+    float: left;
+    vertical-align: top;
+    width: 100px;
+    font-weight: 700;
+    padding: 10px 5px;
+}
+.formSupporting {
+	margin: 4px 0;
+	color: #777;
+	font-size: 11px;	
+}
+
+.formSpacerCell {
+    float: left;
+    width: 15px;
+}
+
+.formSubmit {
+    clear: both;
+    padding: 25px 5px;
+}
+
+.formSubmit input {
+    padding: 3px;
+}
+
+.formError {
+    font-weight: 700;
+    margin: 15px 0;
+    background-color: #fee;
+    color: #000;
+    border: 1px solid red;
+    padding: 10px;
+    clear: both;
+}
+
+form,.formErrorBack {
+    margin: 0;
+}
+
+.formRow,.formSpacer {
+    clear: both;
+}
+
+
+#formMainDiv {
+    width: 100%;
+    display: table;
+}
+
+#fsFooter {
+    padding-top: 10px; 
+    text-align: right; 
+    border-top: solid 1px black;
+}
+
+#fsFooter img {
+    border: 0; 
+    vertical-align: text-top;
+}
+
+#captcha {
+    margin-bottom:20px;
+}
+
+#captcha_image {
+    float: left; 
+    border: solid 1px #333;
+}
+
+#captcha_audio_link, #captcha_reload_link {
+    display:block;
+}
+
+#captcha_audio_link img {    
+    padding: 3px;  
+    margin: 0;
+    border: solid 1px #333; 
+    border-left: 0; 
+    border-bottom: 0; 
+    background: white;
+}
+
+#captcha_reload_link img {
+    padding: 3px;
+    margin: 0;
+    border: solid 1px #333;
+    border-left:0;
+    background:white;
+}
+
+#captcha_entry { 
+    margin-top: 5px;
+}
+
+img {
+	border:none;
+}
+
+a:link {
+	color: #95AB63;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #95AB63;
+	text-decoration: none;
+}
+
+a:active {
+	color: #F6FFE0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F6FFE0;
+	text-decoration: none;
+}
