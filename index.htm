@@ -9,15 +9,63 @@
 	<link rel="stylesheet" type="text/css" href="attitude.css" media="all" />
 	<style>
 		body {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			min-height: 100vh;
+			margin: 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 100vh;
-			margin: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		}
 
 		.container {
 			text-align: center;
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			padding: 50px;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease;
+		}
+
+		.container:hover {
+			transform: translateY(-5px);
+		}
+
+		h1 {
+			color: #2c3e50;
+			font-size: 2.5em;
+			margin-bottom: 40px;
+			font-weight: 600;
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h2 {
+			margin: 20px 0;
+		}
+
+		h2 a {
+			display: inline-block;
+			background: linear-gradient(45deg, #3498db, #1abc9c);
+			color: white;
+			padding: 15px 30px;
+			border-radius: 50px;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 1.2em;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+		}
+
+		h2 a:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+			background: linear-gradient(45deg, #2980b9, #16a085);
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
 		}
 	</style>
 </head>

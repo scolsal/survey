@@ -1,53 +1,75 @@
 body {
-	background-color: #CCC5C4;
-	color: #7F7B7B;
-	font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
-	font-size: 10pt;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+	color: #2c3e50;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+	padding: 20px;
 }
 
 table {
-	font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
-	font-size: 10pt;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
 }
 
 div.formExt {
-	background-color: #F9F2EE;
-	width: 600px;
-    height: 100%;
-	margin-bottom: 5px;
-	padding: 1px;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	width: 700px;
+	margin: 20px auto;
+	padding: 25px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.formExt:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 div.formRow {
-	background-color: #F9F2EE;
-	width: 600px;
-    height: 100%;
-	margin-bottom: -35px;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	width: 700px;
+	margin: 20px auto;
+	padding: 25px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .formField {
     float: left;
     vertical-align: top;
-	background-color: #F9F2EE;
-	width: 600px;
+	background: rgba(255, 255, 255, 0.8);
+	width: 700px;
+	border-radius: 10px;
+	padding: 15px;
 }
 
 .page {
 	text-align: right;
-	font-size: 14pt;
-	color: #7F7B7B;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 500;
 }
 
 .pageb {
-	
-	font-size: 14pt;
-	color: #7F7B7B;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 500;
 }
 
 .formHeading {
-    font-size: 18pt;
-	color: #7F7B7B;
-	margin-bottom: 5px;
+    font-size: 28px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 30px;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #formPage1 {
@@ -60,7 +82,11 @@ div.formRow {
 }
 
 .question {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .hiddenLabel {
@@ -168,21 +194,74 @@ img {
 }
 
 a:link {
-	color: #95AB63;
+	color: #3498db;
 	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
 }
 
 a:visited {
-	color: #95AB63;
+	color: #2980b9;
 	text-decoration: none;
 }
 
 a:active {
-	color: #F6FFE0;
+	color: #1abc9c;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #F6FFE0;
+	color: #1abc9c;
 	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+/* Modern Radio Button Styling */
+input[type="radio"] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #3498db;
+	border-radius: 50%;
+	margin-right: 8px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+
+input[type="radio"]:checked {
+	background-color: #3498db;
+	border-color: #2980b9;
+}
+
+input[type="radio"]:checked::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:hover {
+	border-color: #2980b9;
+	transform: scale(1.1);
+}
+
+/* Form labels with better spacing */
+label {
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 20px;
+	display: inline-flex;
+	align-items: center;
+	transition: color 0.3s ease;
+}
+
+label:hover {
+	color: #2980b9;
 }
